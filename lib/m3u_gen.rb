@@ -11,7 +11,7 @@ class M3uGen
         title: path.split('/')[-2] || "Unsorted",
         files: Array(Hash(result[m3u])[:files]).<<({
           path: path,
-          filename: path.split('/').last,
+          filename: path.split('/').last
         })
       })
     }
